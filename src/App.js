@@ -3,7 +3,6 @@ import React from 'react';
 import './App.css';
 import Count from './container/count';
 // import Count from './components/count';
-import store from './redux/store';
 // import FirstPage from './pages/FirstPage';
 // import SecondPage from './pages/SecondPage';
 // import { NavLink, Route } from 'react-router-dom'
@@ -22,7 +21,7 @@ class App extends React.Component {
       <NavLink to="/second-page">second-page</NavLink>
       <Route path="/first-page" component={FirstPage} ></Route>
       <Route path="/second-page" component={SecondPage} ></Route> */}
-        <Count store={store} />
+        <Count />
       </div>
     );
   }
